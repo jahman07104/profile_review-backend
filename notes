@@ -1,0 +1,11 @@
+Profile 
+has_many Ratings
+name:
+email:
+city:
+phone:
+
+
+Rating
+belongs_to profile
+ratingid_id
