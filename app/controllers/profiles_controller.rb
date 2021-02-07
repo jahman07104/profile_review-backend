@@ -5,7 +5,7 @@ class ProfilesController < ApplicationController
     render json: @profiles, status: 200
   end
 
-  def show 
+  def show
     @profile = Profile.find(params[:id])
 
     render json: @profile, status: 200
@@ -21,7 +21,7 @@ class ProfilesController < ApplicationController
     @profile = Profile.find(params[:id])
     @profile.update(profile_params)
 
-    render json:@profile, status: 200
+    render json: @profile, status: 200
   end
 
   def destroy
@@ -32,8 +32,8 @@ class ProfilesController < ApplicationController
   end
 
   private
-  def Profile_params
-    params.require(:profile).permit(:name,:image,:email,:city,:phone)
+  
+  def profile_params
+    params.require(:profile).permit(:name, :image, :email, :city, :phone, :rating)
   end
 end
-

@@ -1,20 +1,16 @@
 class RatingsController < ApplicationController
-
-
   def index
     @ratings = Ratings.all
     render json: @ratings, status: 200
   end
 
   def create
-   @ratings= Rating.create!(rating_params)
-
+    @rating = Rating.create!(rating_params)
     render json: @rating, status: 200
   end
 
   def show 
-   @rating= Rating.find(params[:id])
-
+    @rating= Rating.find(params[:id])
     render json: @rating, status: 200
   end
 
@@ -33,7 +29,6 @@ class RatingsController < ApplicationController
 
   private
     def rating_params
-      params.require(:rating).permit(:id, :profile_id, :star)
-    end
-end
+      params.permit(:id, :profile_id, :star)
+    end  
 end

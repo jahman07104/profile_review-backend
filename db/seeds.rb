@@ -13,14 +13,14 @@ profiles = [
     "image": "https://i.pravatar.cc/150?img=52",
     "city": "Newark,Nj",
     "email": "John@gmail.com",
-    "phone": 973-888-9999
+    "phone": "973-888-9999"
  },
  {
     "name": "Jennifer Jones",
-    "image": "https://i.pravatar.cc/150?img=65",
+    "image": "https://i.pravatar.cc/150?img=44",
     "city": "Tacoma,Washington",
     "email": "jennifer@gmail.com",
-    "phone": 201-444-5555
+    "phone": "201-444-5555"
     
   },
 
@@ -29,7 +29,7 @@ profiles = [
     "image": "https://i.pravatar.cc/150?img=51",
     "city": "New York,New York",
     "email": "patrick@verizon.net",
-    "phone": 312-333-2222
+    "phone": "312-333-2222"
    
   },
   {
@@ -37,21 +37,21 @@ profiles = [
     "image": "https://i.pravatar.cc/150?img=40",
    "city": "Dayton,Ohio",
    "email": "Julie@Verizon.net",
-   "phone":561-666-7777
+   "phone": "561-666-7777"
   },
   {
     "name": "Howard Mason",
     "image": "https://i.pravatar.cc/150?img=68",
     "city": "Miami,Florida",
     "email": "howard@aol.com",
-    "phone": 978-777-7777
+    "phone": "978-777-7777"
   },
   {
     "name": "Mary Hibbert",
     "image": "https://i.pravatar.cc/150?img=47",
     "city": "Savannah,Georgia",
     "email": "mary@aol.com",
-    "phone":212-666-6666
+    "phone": "212-666-6666"
   }
  
 ]
