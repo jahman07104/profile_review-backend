@@ -5,7 +5,7 @@ class CreateProfiles < ActiveRecord::Migration[6.1]
       t.string :image
       t.string :email
       t.string :city
-      t.integer :phone
+      t.string :phone
 
       t.timestamps
     end
