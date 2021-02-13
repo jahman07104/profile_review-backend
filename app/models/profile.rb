@@ -1,4 +1,3 @@
-class Profile < ApplicationRecord
-  has_many :ratings
+class Profile < ApplicationRecord  
   validates :name, :email, presence: true
 end
