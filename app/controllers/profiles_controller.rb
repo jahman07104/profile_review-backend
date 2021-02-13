@@ -14,7 +14,7 @@ class ProfilesController < ApplicationController
   def create
     @profile = Profile.create(profile_params)
 
-    render json:@profile, status: 200
+    render json: @profile, status: 200
   end
 
   def update
@@ -26,9 +26,9 @@ class ProfilesController < ApplicationController
 
   def destroy
     @profile = Profile.find(params[:id])
-    @profile.delete
-
-    render json: {profileId: @profile.id}
+    profile_id = @profile.id
+    @profile.destroy
+    render json: { id: profile_id }
   end
 
   private
